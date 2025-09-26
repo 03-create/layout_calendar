@@ -9,7 +9,6 @@ $day-font: Arial, Helvetica, sans-serif;
 $cell-size: 100px;
 $gap-size: 1px;
 $calendar-padding: 5px;
-$days-count: 31;
 $days: (
   'mon': 0,
   'tue': 1,
@@ -55,9 +54,9 @@ body {
     }
   }
 
-  & :first-child {
-    margin-left: 6 * $cell-size + 6 * $gap-size;
-  }
+  // & :first-child {
+  //   margin-left: 6 * $cell-size + 6 * $gap-size;
+  // }
 
   @each $day, $numb in $days {
     &--start-day-#{$day} :first-child {
